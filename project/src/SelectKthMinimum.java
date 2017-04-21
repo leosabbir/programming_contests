@@ -13,7 +13,7 @@ import java.util.Arrays;
  * @author Sabbir Manandhar
  * @version 1.0
  */
-public class SelectKthMinium {
+public class SelectKthMinimum {
 
   public static void main(String[] args) {
     for (int i = 1; i <= 13; i++) {

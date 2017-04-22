@@ -1,4 +1,4 @@
-/* File:    SelectKthMinium.java
+/* File:    SelectKthMinimum.java
  * Created: 2017-03-20
  * Author:  Sabbir Manandhar
  *

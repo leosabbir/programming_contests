@@ -13,6 +13,6 @@ sourceSets {
 // }
 
 task run(type: JavaExec, dependsOn: classes) {
-    main 'SelectKthMinium'
+    main 'SelectKthMinimum'
     classpath  sourceSets.main.runtimeClasspath
 }

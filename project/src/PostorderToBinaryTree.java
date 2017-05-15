@@ -1,6 +1,6 @@
 
 
-class Node {
+/*class Node {
   public int value;
   public Node left, right;
 
@@ -8,7 +8,7 @@ class Node {
     this.value = value;
     this.left = this.right = null;
   }
-}
+}*/
 
 public class PostorderToBinaryTree {
 

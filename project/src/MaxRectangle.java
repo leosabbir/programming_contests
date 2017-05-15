@@ -30,6 +30,7 @@ public class MaxRectangle {
 
       }
     }
+    return -1;
   }
 
   public int max(int a, int b) {
@@ -39,6 +40,4 @@ public class MaxRectangle {
       return b;
     }
   }
-}
-
 }

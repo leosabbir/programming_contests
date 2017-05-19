@@ -13,6 +13,6 @@ sourceSets {
 // }
 
 task run(type: JavaExec, dependsOn: classes) {
-    main 'SelectKthMinimum'
+    main 'BinaryHeap'
     classpath  sourceSets.main.runtimeClasspath
 }

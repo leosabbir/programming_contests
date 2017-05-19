@@ -6,6 +6,7 @@ public class StringPermutation {
 	}
 
 
+	// http://www.geeksforgeeks.org/print-all-permutations-of-a-string-with-duplicates-allowed-in-input-string/
 
 	public static void permute(char[] in, StringBuffer out, int cursor) {
 		if (cursor == in.length) {

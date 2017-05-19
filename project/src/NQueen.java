@@ -1,5 +1,6 @@
 
 
+// http://www.geeksforgeeks.org/printing-solutions-n-queen-problem/
 public class NQueen {
 
 	public static void main(String[] args) {

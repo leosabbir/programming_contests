@@ -24,6 +24,7 @@ public class WordBreak {
     return Arrays.asList(dictionary).contains(word);
   }
 
+  // http://www.geeksforgeeks.org/dynamic-programming-set-32-word-break-problem/
   public static boolean canBeBroken(String input) {
     if (input.length() == 0) return true;
     for (int i = 1; i <= input.length(); i++) {
@@ -35,6 +36,7 @@ public class WordBreak {
     return false;
   }
 
+  // http://www.geeksforgeeks.org/word-break-problem-using-backtracking/
   public static void getSentences(String input, StringBuilder sb) {
     if (input.length() == 0) {
       System.out.println(sb.toString());

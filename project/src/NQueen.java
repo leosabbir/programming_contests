@@ -4,7 +4,7 @@
 public class NQueen {
 
 	public static void main(String[] args) {
-		NQueen board = new NQueen(8);
+		NQueen board = new NQueen(12);
 		board.solve();
 		board.printSolutionNumber();
 	}
@@ -50,8 +50,8 @@ public class NQueen {
 	public void solve(int col) {
 		if (col == N) {
 			this.solutionCount++;
-			printSolution();
-			System.out.println();
+			//printSolution();
+			//System.out.println();
 		}
 
 		for (int r = 0; r < N; r++) {

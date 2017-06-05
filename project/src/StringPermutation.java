@@ -1,8 +1,11 @@
+import java.util.Arrays;
 
 public class StringPermutation {
 
 	public static void main(String[] args) {
-		permute("thee".toCharArray(), new StringBuffer(), 0);
+		permute("AA".toCharArray(), new StringBuffer(), 0);
+		System.out.println();
+		permute2("the".toCharArray());
 	}
 
 
@@ -10,7 +13,7 @@ public class StringPermutation {
 
 	public static void permute(char[] in, StringBuffer out, int cursor) {
 		if (cursor == in.length) {
-			System.out.println("Permutation Foudn: " + out.toString());
+			System.out.println("Permutation Found: " + out.toString());
 			return;
 		}
 
@@ -31,5 +34,27 @@ public class StringPermutation {
 		//System.out.println(out.toString());
 		//out.deleteCharAt(out.length() - 1);
 	}
+
+	public static void permute2(char[] in) {
+		permute2(in, new StringBuilder(), new boolean[in.length]);
+	}
+
+	public static void permute2(char[] in, StringBuilder out, boolean[] used) {
+		if (out.length() == in.length) {
+			System.out.println(out.toString());
+		}
+
+		for (int i = 0; i < in.length ; i++) {
+			if (used[i]) {
+				continue;
+			}
+
+			out.append(in[i]);
+			used[i] = true;
+			permute2(in, out, used);
+			used[i] = false;
+			out.setLength(out.length() - 1);
+		}
+ 	}
 	
 }

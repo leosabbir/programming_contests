@@ -1,4 +1,3 @@
-
 /**
 * Class that sorts an array using Quick Sort algorithm
 *

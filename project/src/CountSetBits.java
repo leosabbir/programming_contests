@@ -3,6 +3,7 @@
 * Count the number of Set bits in a given UNSIGNED integer
 *
 * Reference: http://www.geeksforgeeks.org/count-set-bits-in-an-integer/
+* Reference: http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetTable
 */
 public class CountSetBits {
 

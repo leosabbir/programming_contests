@@ -1,5 +1,6 @@
 /**
 * Computes the smallest window in which all characters in substring can be found
+* reference: http://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
 */
 public class SmallestWindowContainingSubstring {
 

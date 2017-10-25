@@ -7,15 +7,19 @@ public class PatternSearch {
 		String pattern = "jklm";
 
 		int[] z = computeZ(pattern + "$" + text);
+		// find pattern using Z Array
 		for (int i = 0; i < z.length ; i++) {
 			if (z[i] == pattern.length()) {
 				System.out.println(i - pattern.length() - 1);
 			}
 		}
-	}
+	} // main
 
+	//----------------------------------------------------------------------------------------------------
 
-	// O(n) time
+	/**
+	* Computes Z array in O(n) time
+	*/
 	public static int[] computeZ(String input) {
 		int[] z = new int[input.length()];
 		int n = input.length();
@@ -52,7 +56,6 @@ public class PatternSearch {
 				}
 			}
 		}
-
 		return z;
-	}
+	} // computeZ
 }

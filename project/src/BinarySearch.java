@@ -1,4 +1,4 @@
-
+import java.util.*;
 
 public class BinarySearch {
 
@@ -63,10 +63,15 @@ public class BinarySearch {
 		System.out.println(res);
 		res = searchUpperLimit(new int[]{10}, 11) == 0 ? "SUCCESS" : "FAILED";
 		System.out.println(res);
-	}
+	} // main
 
+	//-----------------------------------------------------------------------------------
 
-
+	/**
+	* Search an item equal to query item in the given list
+	* @param list - list where we need to search
+	* @param item - item to search in the list
+	*/
 	public static int search(int[] list, int item) {
 		int lo = 0;
 		int hi = list.length - 1;
@@ -83,8 +88,15 @@ public class BinarySearch {
 			}
 		}
 		return -1;
-	}
+	} // search
 
+	//----------------------------------------------------------------------------------
+
+	/**
+	* Search an item which is just larger than the given lowerlimit
+	* @param list - list where we need to search
+	* @param lowerLimit - lower limit
+	*/
 	public static int searchLowerLimit(int[] list, int lowerLimit) {
 		int lo = 0;
 		int hi = list.length - 1;
@@ -108,8 +120,15 @@ public class BinarySearch {
 			}
 		}
 		return hi + 1;
-	}
+	} // searchLowerLimit
 
+	//--------------------------------------------------------------------------------
+
+	/**
+	* Search an item which is just smaller than the given upper limit
+	* @param list - list where we search
+	* @param uppperLimit - upper limit
+	*/
 	public static int searchUpperLimit(int[] list, int upperLimit) {
 		int lo = 0;
 		int hi = list.length - 1;
@@ -133,10 +152,16 @@ public class BinarySearch {
 			}
 		}
 		return lo-1;
-	}
+	} // searchUpperLimit
 
+	//------------------------------------------------------------------------------
+
+	/**
+	* TODO find elements in given range using above two functions
+	*/
 	public static List<Integer> findElementsInRange(int[] list, int lowerLimit, int upperLimit) {
 		List<Integer> result = new ArrayList<Integer>();
+		return result;
 	}
 	
 }

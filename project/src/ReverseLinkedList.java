@@ -80,7 +80,7 @@ public class ReverseLinkedList {
 	* Modifies the original linked list
 	*/
 	public static LinkedListNode reverseRecursive2(LinkedListNode head) {
-		return printReverseRecursive2Helper(head, null);
+		return reverseRecursive2Helper(head, null);
 	}
 
 	//----------------------------------------------------------------------------------------------------

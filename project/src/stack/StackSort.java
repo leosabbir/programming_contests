@@ -37,7 +37,7 @@ public class StackSort {
 			return;
 		} else {
 			int top = stack.pop();
-			sort(stack);
+			sortRecursive(stack);
 			sortedInsertRecursive(stack, top);
 		}
 	} // sortRecursive
@@ -54,7 +54,7 @@ public class StackSort {
 			return;
 		}
 		int top = stack.pop();
-		sortedInsert(stack, x);
+		sortedInsertRecursive(stack, x);
 		stack.push(top);
 	} // sortedInsertRecursive
 

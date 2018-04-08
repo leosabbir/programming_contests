@@ -27,10 +27,10 @@ public class HistogramMaxArea {
                 while(stackCursor > 0 && sizeStack[stackCursor-1] > hist[currentPosition]) {
                     pos = popLarger();
                 }
-                if (stackCursor == 0 || sizeStack[stackCursor-1] < hist[currentPosition]) {
+                //if (stackCursor == 0 || sizeStack[stackCursor-1] < hist[currentPosition]) {
                     sizeStack[stackCursor] = hist[currentPosition];
                     posStack[stackCursor++] = pos;
-                }
+                //}
             }
         }
 
@@ -52,7 +52,7 @@ public class HistogramMaxArea {
 
     public static void main(String[] args) {
         //int[] input = {2, 1, 2, 3, 2, 1, 1, 3};
-        int[] input = {9, 7, 7, 9};
+        int[] input = {2,2,2, 1, 0, 1,1,1};
         HistogramMaxArea computer = new HistogramMaxArea();
         
         System.out.println(computer.compute(input));

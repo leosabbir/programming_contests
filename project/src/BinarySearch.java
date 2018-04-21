@@ -5,6 +5,9 @@
  * Copyright (c) 2018 WorldLingo Inc.
  */
 
+import java.util.List;
+import java.util.ArrayList;
+
 /**
  * Implements Iterative Binary Search
  * Implements Lower Limit Search
@@ -232,6 +235,35 @@ public class BinarySearch {
 
     return lo - 1;
   } // searchUpperBound
+
+  //------------------------------------------------------------------------------------
+
+  /**
+  * Finds all the numbers in a sorted array in the given range
+  * @param list input sorted array
+  * @param @lowerLimit lower limit of the range
+  * @param @upperLimit upper limit of the range
+  * @return list of numbers in the range
+  */
+  public static List findElementsInRange(int[] list, int lowerLimit, int upperLimit) {
+    List result = new ArrayList();
+
+    int start = searchLowerLimit(list, lowerLimit);
+    if (start == -1) {
+        return result;
+    }
+
+    int end = searchUpperLimit(list, upperLimit);
+    if(end == -1) {
+        return result;
+    }
+
+    while(start <= end) {
+        result.add(list[start++]);
+    }
+
+    return result;
+  } // findElementesInRange
 
   //------------------------------------------------------------------------------------
 
